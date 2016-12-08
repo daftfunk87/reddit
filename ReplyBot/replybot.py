@@ -1,4 +1,4 @@
-#/u/GoldenSights
+#/u/daft_funk87
 import traceback
 import praw # simple interface to the reddit API, also handles rate limiting of requests
 import time
@@ -6,26 +6,22 @@ import sqlite3
 
 '''USER CONFIGURATION'''
 
-APP_ID = ""
-APP_SECRET = ""
-APP_URI = ""
-APP_REFRESH = ""
-# https://www.reddit.com/comments/3cm1p8/how_to_make_your_bot_use_oauth2/
-USERAGENT = ""
+
+USERAGENT = "PickleBot9000 0.1"
 # This is a short description of what the bot does.
 # For example "Python automatic replybot v2.0 (by /u/GoldenSights)"
-SUBREDDIT = "pics"
+SUBREDDIT = "calgaryflames"
 # This is the sub or list of subs to scan for new posts. For a single sub, use "sub1". For multiple subreddits, use "sub1+sub2+sub3+..."
 DO_SUBMISSIONS = False
 DO_COMMENTS = True
 # Look for submissions, comments, or both.
-KEYWORDS = ["phrase 1", "phrase 2", "phrase 3", "phrase 4"]
+KEYWORDS = ["Pickle", "pickle", "PICKLE"]
 # These are the words you are looking for
 KEYAUTHORS = []
 # These are the names of the authors you are looking for
 # The bot will only reply to authors on this list
 # Keep it empty to allow anybody.
-REPLYSTRING = "Hi hungry, I'm dad."
+REPLYSTRING = "PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE - ^^^Thisbotispicklecrazy"
 # This is the word you want to put in reply
 MAXPOSTS = 100
 # This is how many posts you want to retrieve all at once. PRAW can download 100 at a time.
@@ -124,5 +120,3 @@ while True:
         cycles = 0
     print('Running again in %d seconds \n' % WAIT)
     time.sleep(WAIT)
-
-    
